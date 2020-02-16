@@ -6,6 +6,7 @@
 #define SCENES_ARCADESCENE_H
 
 #include "Scene.h"
+#include "SpriteSheet.h"
 #include <memory>
 
 enum eGame
@@ -30,6 +31,9 @@ public:
 
 private:
     std::unique_ptr<Scene> GetScene(eGame game);
+
+    // Temporary
+    SpriteSheet mTempSS;
 };
 
 #endif //SCENES_ARCADESCENE_H
